@@ -1,4 +1,5 @@
 permalink: /:title/
+baseurl: /fonts/
 # github overrides
 safe: true
 lsi: false
