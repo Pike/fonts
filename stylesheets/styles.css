@@ -1,3 +1,5 @@
+---
+---
 @import url(https://fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700);
 html {
   background: #6C7989;
@@ -300,6 +302,16 @@ footer p {
 }
 footer p + p {
   float: right;
+}
+
+@font-face {
+    font-family: "UnicodeHex";
+    src: url("{{site.baseurl}}/stylesheets/UnicodeHex.ttf");
+}
+
+.data {
+    background: white;
+    font-family: "MozTT", "UnicodeHex";
 }
 
 @media print, screen and (max-width: 740px) {

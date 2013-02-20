@@ -6,10 +6,11 @@ tagline: Testcase repository for i18n of MozTT and friends
 <h3>Existing testcases:</h3>
 <table>
 {% for item in site.posts %}
-  <tr><td><a href="{{ item.url }}">{{item.title}} ({{item.locale}})</a></td></tr>
+  <tr><td><a href="{{ site.baseurl }}{{ item.url }}">{{item.title}} ({{item.locale}})</a></td></tr>
 {% endfor %}
 </table>
 
 <h3>Add Testcase:</h3>
 
-<p>You can create new testcase with fontconfig and this webtool.</p>
+<p>You can create new testcase with fontconfig and <a
+href="create-test">create-test</a> webtool.</p>

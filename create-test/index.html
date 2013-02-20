@@ -1,0 +1,18 @@
+---
+layout: default
+title: Create test-case
+tagline: fontconfig to the rescue
+depth: ../
+extra_scripts:
+ - http://code.jquery.com/jquery-1.9.1.min.js
+ - ../javascripts/create.js
+---
+<p>Run <code>fc-validate -l ab -v MozTT</code> and paste the resulting
+missing code points into the textarea below. Then save the generated
+testcase to <code>_posts</code> with the suggested name.</p>
+
+<label for="locale">Locale:</label> <input id="locale" placeholder="ab-CD"><br>
+<label for="language">Language:</label> <input id="language"><br>
+<textarea rows="12"></textarea><br>
+<button id="create_test" disabled>create testcase</button>
+<a id="download" disabled>Download</a>
