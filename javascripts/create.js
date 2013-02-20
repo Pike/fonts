@@ -24,6 +24,7 @@ function create_test() {
     codepoints.sort();
     outdoc.push('missing: ' + codepoints.length + '\n');
     outdoc.push('---\ntable(data).\n');
+    outdoc.push('|A|A|\n');
     for (i=0, ii=codepoints.length; i < ii; ++i) {
         char = codepoints[i];
         outdoc.push('|!' + getImage(char) + '!|');
