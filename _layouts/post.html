@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="{{ page.locale }}">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
@@ -18,9 +18,9 @@
     <div class="wrapper">
       <header>
         <h1>{{ page.title }}</h1>
-        <p>{{ page.missing }} missing glyphs</p>
+        <p>{{ page.missing }} missing glyphs for {{ page.family }}</p>
       </header>
-      <section>
+      <section style="font-family: {{ page.family }};">
 {{ content }}
       </section>
     </div>

@@ -304,14 +304,8 @@ footer p + p {
   float: right;
 }
 
-@font-face {
-    font-family: "UnicodeHex";
-    src: url("{{site.baseurl}}/stylesheets/UnicodeHex.ttf");
-}
-
 .data {
     background: white;
-    font-family: "MozTT", "UnicodeHex";
 }
 
 @media print, screen and (max-width: 740px) {
