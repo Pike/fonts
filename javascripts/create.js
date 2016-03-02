@@ -1,4 +1,4 @@
-/*global */
+/* global Blob */
 
 function create_test() {
     var val = $("textarea").val();
@@ -10,7 +10,7 @@ function create_test() {
     var fname = (function() {
         var d = new Date();
         var rv = (new Date()).toISOString().split('T')[0] + '-';
-        rv += loc + "-" + family + '.textile';
+        rv += loc + "-" + family + '.md';
         return rv;
     })();
     var outdoc = ['---\n',
@@ -25,11 +25,10 @@ function create_test() {
     codepoints = Object.keys(hash);
     codepoints.sort();
     outdoc.push('missing: ' + codepoints.length + '\n');
-    outdoc.push('---\ntable(data).\n');
-    outdoc.push('|A|A|\n');
+    outdoc.push('---\n');
     for (i=0, ii=codepoints.length; i < ii; ++i) {
         char = codepoints[i];
-        outdoc.push('|!' + getImage(char, family) + '!|');
+        outdoc.push('|![](' + getImage(char, family) + ')|');
         outdoc.push(char);
         outdoc.push('|\n');
     }
