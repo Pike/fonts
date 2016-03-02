@@ -3,4 +3,4 @@ baseurl: /fonts
 # github overrides
 safe: true
 lsi: false
-highlighter: pygments
+highlighter: rouge
